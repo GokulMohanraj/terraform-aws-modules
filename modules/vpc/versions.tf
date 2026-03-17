@@ -2,12 +2,12 @@ terraform {
 
   required_version = ">= 1.5"
 
-  required_providers {
+  backend "s3" {}   # ⭐ VERY IMPORTANT FOR TERRAGRUNT
 
+  required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
-
   }
 }
