@@ -1,7 +1,3 @@
-# Provider
-
-provider "aws" {}
-
 # VPC
 resource "aws_vpc" "this" {
 
